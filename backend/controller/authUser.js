@@ -35,8 +35,8 @@ export const signUp = async (req, res) => {
       return res.status(401).json({ message: "token not found" });
     }
     res.cookie("token", token, {
-      secure: false,
-      sameSite: "strict",
+      secure: true,
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true,
     });
@@ -64,8 +64,8 @@ export const logIn = async (req, res) => {
       return res.status(401).json({ message: "token not found" });
     }
     res.cookie("token", token, {
-      secure: false,
-      sameSite: "strict",
+      secure: true,
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true,
     });
@@ -157,8 +157,8 @@ export const googleAuth = async (req, res) => {
       return res.status(401).json({ message: "token not found" });
     }
     res.cookie("token", token, {
-      secure: false,
-      sameSite: "strict",
+      secure: true,
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true,
     });
