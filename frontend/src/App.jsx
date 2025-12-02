@@ -29,7 +29,7 @@ import { io } from "socket.io-client";
 import { setSocket } from "./redux/userSlice";
 import { updateItemRating } from "./redux/userSlice";
 
-export const serverUrl = "http://localhost:3000";
+export const serverUrl = "https://anupam-backend.onrender.com";
 function App() {
   const { userData } = useSelector((state) => state.user);
   const dispatch = useDispatch();
