@@ -18,10 +18,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: [
-      "http://localhost:5173",
-      "https://anupum-fooddelivery.onrender.com"
-    ],
+    origin: "https://anupum-fooddelivery.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -35,10 +32,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://anupum-fooddelivery.onrender.com"
-    ],
+    origin: "https://anupum-fooddelivery.onrender.com",
     credentials: true,
   })
 );
