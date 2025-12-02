@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import UserDashboad  from '../components/userDashboad'
+import UserDashboad  from '../components/UserDashboad'
 import OwnerDashboad from '../components/OwnerDashboad'
 import DeliveryBoydash from '../components/DeliveryBoydash'
 const Home = () => {
